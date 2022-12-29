@@ -1,0 +1,27 @@
+.frame{
+    border: 2px solid $primary-color;
+    width: 100px;
+    height: 300px;
+    background-color: transparent;
+    position: absolute;
+    &--about-us-1{
+        top: 20%;
+        left: 10%;
+    }
+    &--about-us-2{
+        top: 30%;
+        left: 20%;
+    }
+    &--title{
+        border: 2px solid $white;
+        height: 100px;
+        width: 80%;
+        left: 10px;
+        top: 12%;
+        animation: frame-animation 1.5s linear infinite;
+        display: none;
+        @include medium-up{
+            display: inherit;
+        }
+    }
+}

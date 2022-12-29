@@ -1,0 +1,32 @@
+.line{
+    position: fixed;
+    z-index: 1;
+    width: 1px;
+    height: 100vh;
+    opacity: 0.75;
+    background-color: $light-grey;
+    &--1{
+        left: calc(100vw / 9);
+    }
+    &--2{
+        left: calc(2 * (100vw / 9));
+    }
+    &--3{
+        left: calc(3 * (100vw / 9));
+    }
+    &--4{
+        left: calc(4 * (100vw / 9));
+    }
+    &--5{
+        left: calc(5 * (100vw / 9));
+    }
+    &--6{
+        left: calc(6 * (100vw / 9));
+    }
+    &--7{
+        left: calc(7 * (100vw / 9));
+    }
+    &--8{
+        left: calc(8 * (100vw / 9));
+    }
+}

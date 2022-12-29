@@ -1,0 +1,12 @@
+.services{
+    &__list{
+        position: relative;
+        // display: block;
+        z-index: 3;
+        margin-top: 170px;
+        padding: 0 30px;
+        @include small-up{
+            margin-top: 140px;
+        }
+    }
+}

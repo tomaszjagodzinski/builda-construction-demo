@@ -1,0 +1,51 @@
+.grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    @include medium-up{
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    &--3{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        @include small-up{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include medium-up{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    &--4{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        @include small-up{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include medium-up{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    &--6{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        @include small-up{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include medium-up{
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}
+
+@import "header";
+@import "footer";
+@import "about-us";
+@import "services";
+@import "projects";
+@import "videos";
+@import "advantages";
+@import "testimonials";
+@import "companies";
+@import "cta";

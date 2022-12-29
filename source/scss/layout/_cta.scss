@@ -1,0 +1,25 @@
+.cta{
+    padding: 20px 30px;
+    margin-top: 20px;
+    border: 1px solid $light-grey;
+    border-left: none;
+    border-right: none;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        @include medium-up{
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+    &__image{
+        display: none;
+        @include medium-up{
+            display: inherit;
+        }
+    }
+}

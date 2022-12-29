@@ -1,0 +1,33 @@
+.btn{
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+    color: $black;
+    font-weight: 600;
+    position: relative;
+    z-index: 100;
+    @include transitions(300ms);
+
+    &--primary-black{
+        background-color: $primary-color;
+        color: $white;
+        &:hover{
+            background-color: $black;
+        }
+    }
+    &--xl{
+        padding: 15px 25px;
+    }
+    &--mobile-center{
+        left: 50%;
+        transform: translateX(-50%);
+        @include medium-up{
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+    &--rounded{
+        border: none;
+        border-radius: 50%;
+    }
+}

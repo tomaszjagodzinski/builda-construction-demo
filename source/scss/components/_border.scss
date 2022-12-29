@@ -1,0 +1,8 @@
+.border{
+    &--left{
+        border-left: 3px solid $black;
+    }
+    &--primary{
+        border-color: $primary-color;
+    }
+}

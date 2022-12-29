@@ -1,0 +1,21 @@
+.companies{
+    padding: 20px 30px;
+    margin-top: 20px;
+    &__list{
+        grid{
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__logo{
+        max-width: 75%;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        top: 0;
+        @include transitions(300ms);
+        &:hover{
+            top: -10px;
+        }
+    }
+}
